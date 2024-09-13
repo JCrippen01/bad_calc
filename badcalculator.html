@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external CSS and JS links -->
+    <link rel="stylesheet" href="style.css">
+    <script async type="text/javascript" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+    </head>
+    <title>Calculator</title>
+</head>
+
+<!-- 
+Assignment: Improve the functionality of my bad calculator to include basic arithmetic for all numbers 0-9, if you have extra time work on the CSS file so that it matches the calculator.png picture found within this folder -->
+
+<body>
+    <h2>Bad Calculator</h1>
+    <div class="calc-scheme">
+    <table id="calc">
+    <tr id="result-background">
+        <div>
+        <td colspan="4"><input type="text" class="form"
+        id="result"></td>
+        </div>
+    </tr>
+    <tr>
+        <td><input type="button"  class="button" value="1" onclick="display('1')"          onkeydown="myFunction(event)"></td>
+        <td><input type="button" class="button" value="2" onclick="display('2')" onkeydown="myFunction(event)"></td>
+        <td><input type="button"class="button" value="3" onclick="display('3')" onkeydown="myFunction(event)"></td>
+        <td><input type="button" class="button"value="+" onclick="display('+')" onkeydown="myFunction(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="button" value="4" onclick="display('4')"onkeydown="myFunction(event)"></td> 
+        <td><input type="button" class="button" value="5" onclick="display('5')"onkeydown="myFunction(event)"></td>
+        <td><input type="button"  class="button" value="6" onclick="display('6')"onkeydown="myFunction(event)"></td>
+        <td><input type="button" class="button" value="-" onclick="display('-')"onkeydown="myFunction(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="button" value="7" onclick="display('7')"onkeydown="myFunction(event)"></td>
+         
+        <td><input type="button" class="button" value="8" onclick="display('8')"onkeydown="myFunction(event)"></td>
+    
+        <td><input type="button" class="button" value="9" onclick="display('9')"onkeydown="myFunction(event)"></td>
+        <td><input type="button" class="button" value="*" onclick="display('*') "onkeydown="myFunction"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="button" value="C" onclick="clr()"onkeydown="myFunction(event)"></td>
+         
+        <td><input type="button" class="button" value="0" onclick="display('0')"onkeydown="myFunction(event)"></td>
+        
+        <td><input type="button" class="button" value="=" onclick="solve()"onkeydown="myFunction(event)"></td>
+        <td><input type="button" class="button" value="/" onclick="display('/')"onkeydown="myFunction(event)"></td>
+    </tr>
+</div>
+</body>
+
+
+    
+</html>
